@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Responsiva con Bootstrap 5</title>
+    <!-- Enlace al archivo CSS de Bootstrap 5 desde un CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #0062be;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .nav-item a {
+            color: white !important;
+        }
+
+        .container-main {
+            margin-top: 40px;
+        }
+
+        .card-header {
+            background-color: #0062be;
+            color: white;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .footer-logo {
+            width: 50px;
+        }
+
+        /* Estilos personalizados para mejorar la accesibilidad */
+        a:focus, a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado y barra de navegación -->
+    <header>
+        <div class="container">
+            <h1 class="text-center">Bienvenido a mi Página Web Responsiva</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Mi Web</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre mí</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <div class="container container-main">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Bienvenido a mi Blog</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>Este es un ejemplo de una página web creada utilizando el framework Bootstrap 5. Bootstrap 5 facilita el diseño de interfaces responsivas y accesibles.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Últimas Noticias</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><a href="#">Artículo 1</a></li>
+                            <li><a href="#">Artículo 2</a></li>
+                            <li><a href="#">Artículo 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mi Web - Todos los derechos reservados.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Logo_Bootstrap_5.svg" alt="Antonio Sornoza" class="footer-logo">
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
